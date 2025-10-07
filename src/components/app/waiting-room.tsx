@@ -2,7 +2,6 @@ import { AlertCircle, Clock, Users } from "lucide-react";
 import { useEffect, useState } from "react";
 import { CopyToClipboard } from "@/components/app/copy-to-clipboard";
 import { Alert, AlertDescription } from "@/components/ui/alert";
-import { getToken } from "@/lib/storage";
 import {
   formatTime,
   MILLISECONDS_TO_SECONDS,

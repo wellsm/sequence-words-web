@@ -1,8 +1,4 @@
-import {
-  createRootRouteWithContext,
-  Outlet,
-  redirect,
-} from "@tanstack/react-router";
+import { createRootRouteWithContext, Outlet } from "@tanstack/react-router";
 import { TanStackRouterDevtools } from "@tanstack/react-router-devtools";
 import type { AuthContext } from "@/providers/auth";
 import { ThemeProvider } from "@/providers/theme";

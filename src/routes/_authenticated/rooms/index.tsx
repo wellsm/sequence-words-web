@@ -1,4 +1,4 @@
-import { createFileRoute, redirect, useNavigate } from "@tanstack/react-router";
+import { createFileRoute, useNavigate } from "@tanstack/react-router";
 import { CreateRoom } from "@/components/app/create-room";
 import { JoinRoom } from "@/components/app/join-room";
 import { Modal } from "@/components/app/modal";

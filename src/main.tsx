@@ -4,7 +4,8 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { createRouter, RouterProvider } from "@tanstack/react-router";
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
-import { AuthProvider, useAuth } from "@/providers/auth";
+import { unknown } from "zod";
+import { type AuthContext, AuthProvider, useAuth } from "@/providers/auth";
 import { routeTree } from "./routeTree.gen";
 
 const queryClient = new QueryClient();
@@ -13,7 +14,8 @@ const router = createRouter({
   defaultPreload: "intent",
   scrollRestoration: true,
   context: {
-    auth: undefined,
+    authenticated: false,
+    auth: unknown as unknown as AuthContext,
   },
 });
 
