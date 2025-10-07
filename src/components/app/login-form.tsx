@@ -29,8 +29,8 @@ export function LoginForm({ onLogin }: Props) {
 
   const form = useForm<FormValues>({
     defaultValues: {
-      email: "john.doe@example.com",
-      password: "John@123",
+      email: "",
+      password: "",
     },
   });
 

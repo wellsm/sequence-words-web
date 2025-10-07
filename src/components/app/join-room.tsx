@@ -34,7 +34,7 @@ export function JoinRoom({ onSubmit }: Props) {
 
   const form = useForm<FormValues>({
     defaultValues: {
-      name: "Jane Doe",
+      name: "",
       code: "",
     },
   });

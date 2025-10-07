@@ -54,7 +54,7 @@ export function CreateRoom({ onSubmit }: Props) {
 
   const form = useForm<FormValues>({
     defaultValues: {
-      name: "John Doe",
+      name: "",
       howManyWords: DEFAULT_WORDS_AMOUNT,
       duration: DEFAULT_DURATION,
     },
